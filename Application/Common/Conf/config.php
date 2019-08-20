@@ -27,6 +27,7 @@ return array(
     'URL_ROUTER_ON' => true,
     'URL_ROUTE_RULES' => array(
         ''            => 'Home/Index/index',
+        'second-page'            => 'Home/Index/second-page',
     ),
     'AUTH_CONFIG' => array(
         'AUTH_ON' => true, //認證開關

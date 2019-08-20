@@ -59,6 +59,14 @@ export default {
     // publicPath: '',
     transpile: [/^element-ui/],
     extractCSS: true,
+    filenames: {
+      app: ({ isDev }) => '[name].js',
+      chunk: ({ isDev }) => '[name].js',
+      css: ({ isDev }) => '[name].css',
+      img: ({ isDev }) => '[path][name].[ext]',
+      font: ({ isDev }) => '[path][name].[ext]',
+      video: ({ isDev }) => '[path][name].[ext]'
+    },
     /*
     ** You can extend webpack config here
     */
